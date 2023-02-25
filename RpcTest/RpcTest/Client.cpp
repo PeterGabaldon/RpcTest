@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h>
+#include "bdesvc.h"
 // Links the rpcrt4.lib that exposes the WinAPI RPC functions
 #pragma comment(lib, "rpcrt4.lib")
 
@@ -13,7 +14,7 @@ int main()
 	status = RpcStringBindingComposeW(
 		NULL,                         // UUID of the interface
 		(RPC_WSTR)L"ncalrpc",    // TCP binding 
-		(RPC_WSTR)L"eventlog", // Server IP address
+		NULL, // Server IP address
 		NULL,           // Port on which the interface is listening
 		NULL,                         // Network protocol to use
 		&szStringBinding              // Variable in which the binding string is to be stored
@@ -27,9 +28,12 @@ int main()
 		&ImplicitHandle       // The variable in which is stored the binding handle
 	);
 
+	long* a = (long*)malloc(sizeof(long));
+	wchar_t** b = (wchar_t**)malloc(1000);
+
 	RpcTryExcept{
 		// Calls the remote function
-		(L"192.168.80.129", 4444);
+		Proc12(ImplicitHandle, a, b);
 	}
 		RpcExcept(1) {
 		printf("RPCExec: %d\n", RpcExceptionCode());

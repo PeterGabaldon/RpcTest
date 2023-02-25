@@ -1,0 +1,8 @@
+﻿  64 bit Processing .\bdesvc.idl
+  bdesvc.idl
+  bdesvc_c.c
+  bdesvc_s.c
+  Generating Code...
+  Client.cpp
+C:\Users\Peter\RpcTest\RpcTest\RpcTest\Client.cpp(23,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'RPC_WSTR'
+  RpcTest.vcxproj -> C:\Users\Peter\RpcTest\RpcTest\x64\Debug\RpcTest.exe
