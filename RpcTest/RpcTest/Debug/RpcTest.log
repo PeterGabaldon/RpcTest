@@ -1,9 +1,0 @@
-﻿  Processing .\bdesvc.idl
-  bdesvc.idl
-  bdesvc_c.c
-  bdesvc_s.c
-  Generating Code...
-  Client.cpp
-C:\Users\Peter\RpcTest\RpcTest\RpcTest\Client.cpp(23,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'RPC_WSTR'
-C:\Users\Peter\RpcTest\RpcTest\RpcTest\Client.cpp(33,26): error C2440: 'initializing': cannot convert from 'const wchar_t [5]' to 'wchar_t *'
-C:\Users\Peter\RpcTest\RpcTest\RpcTest\Client.cpp(33,17): message : Conversion from string literal loses const qualifier (see /Zc:strictStrings)
