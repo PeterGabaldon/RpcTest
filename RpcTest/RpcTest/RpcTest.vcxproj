@@ -139,15 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bdesvc_c.c" />
-    <ClCompile Include="bdesvc_s.c" />
+    <ClCompile Include="CertProp_c.c" />
+    <ClCompile Include="CertProp_s.c" />
     <ClCompile Include="Client.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bdesvc.h" />
+    <ClInclude Include="CertProp.h" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="bdesvc.idl" />
+    <Midl Include="CertProp.idl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

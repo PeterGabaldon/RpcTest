@@ -18,20 +18,20 @@
     <ClCompile Include="Client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bdesvc_c.c">
+    <ClCompile Include="CertProp_c.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bdesvc_s.c">
+    <ClCompile Include="CertProp_s.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bdesvc.h">
+    <ClInclude Include="CertProp.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="bdesvc.idl">
+    <Midl Include="CertProp.idl">
       <Filter>Source Files</Filter>
     </Midl>
   </ItemGroup>

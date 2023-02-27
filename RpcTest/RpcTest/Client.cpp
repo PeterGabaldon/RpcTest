@@ -1,6 +1,6 @@
 #include <iostream>
 #include <windows.h>
-#include "bdesvc.h"
+#include "CertProp.h"
 // Links the rpcrt4.lib that exposes the WinAPI RPC functions
 #pragma comment(lib, "rpcrt4.lib")
 
@@ -28,12 +28,9 @@ int main()
 		&ImplicitHandle       // The variable in which is stored the binding handle
 	);
 
-	long* a = (long*)malloc(sizeof(long));
-	wchar_t** b = (wchar_t**)malloc(1000);
-
 	RpcTryExcept{
 		// Calls the remote function
-		Proc12(ImplicitHandle, a, b);
+		Proc1(ImplicitHandle, _wcsdup(L"Test"));
 	}
 		RpcExcept(1) {
 		printf("RPCExec: %d\n", RpcExceptionCode());
