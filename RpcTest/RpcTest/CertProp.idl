@@ -1,0 +1,13 @@
+[
+uuid(30b044a5-a225-43f0-b3a4-e060df91f9c1),
+version(1.0),
+]
+interface DefaultIfName
+{
+
+long Proc0(
+);
+
+long Proc1(
+	[in][string] wchar_t* arg_1);
+} 
