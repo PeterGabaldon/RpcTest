@@ -28,12 +28,9 @@ int main()
 		&ImplicitHandle       // The variable in which is stored the binding handle
 	);
 
-	long* a = (long*)malloc(sizeof(long));
-	wchar_t** b = (wchar_t**)malloc(1000);
-
 	RpcTryExcept{
 		// Calls the remote function
-		Proc12(ImplicitHandle, a, b);
+		Proc5(ImplicitHandle);
 	}
 		RpcExcept(1) {
 		printf("RPCExec: %d\n", RpcExceptionCode());
