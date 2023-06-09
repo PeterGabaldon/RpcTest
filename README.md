@@ -1,6 +1,6 @@
 # RpcTest
 
-Undocumented BitLocker Service (BDESVC) Local RPC Interface performs a MailSlot open operation on non-domain joined machines. Apparently, when this is not ocurring on domain-joined machines. This service runs as SYSTEM.
+Undocumented BitLocker Service (BDESVC) Local RPC Interface performs a MailSlot ping ([https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/2cff75a9-5871-4493-a704-017b506f8df0](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/2cff75a9-5871-4493-a704-017b506f8df0)) operation on non-domain joined machines. Apparently, when this is not ocurring on domain-joined machines. This service runs as SYSTEM.
 
 ![image](https://github.com/PeterGabaldon/RpcTest/assets/34518201/efab6a8f-0089-4936-aa45-3a9ffdb65b3a)
 
