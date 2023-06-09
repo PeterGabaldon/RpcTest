@@ -4,7 +4,7 @@ Undocumented BitLocker Service (BDESVC) Local RPC Interface performs a MailSlot 
 
 ![image](https://github.com/PeterGabaldon/RpcTest/assets/34518201/efab6a8f-0089-4936-aa45-3a9ffdb65b3a)
 
-When calling method 5, _Proc5_, the service will try to open a MailSlot to a non-existent name. Finally, I didn't find a way to abuse it.
+When calling method 5, _Proc5_, the service will try to perform the MailSlot ping. It is send to broadcast. Finally, I didn't find a way to abuse it.
 
 ![image](https://github.com/PeterGabaldon/RpcTest/assets/34518201/ef39892c-af3f-4332-ab4d-bb5ff137eba5)
 
